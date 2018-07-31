@@ -1,0 +1,576 @@
+/* Gloabal settins */
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+  max-width: 1500px;
+  width: 100%;
+  margin: auto;
+  background-color: #c5c5ce36;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+i {
+  font-size: 3rem;
+}
+
+    /* ================== NAVIGATION ============== */
+nav {
+  position: fixed;
+  z-index: 5;
+  background-color: #3b4147eb;
+  width: 100%;
+  transition: width 0.3s;
+}
+
+nav.hidden {
+  width: 0%;
+}
+    /* =================NAVIGATION - MOBILE ============= */
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- NAV - MENU ICON ------- */
+
+.nav-button {
+  cursor: pointer;
+  align-self: flex-end;
+  padding-right: 1.8rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+  width: 40px;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 3rem;
+    height: 0.5rem;
+    background-color: #cdcdce;
+    margin: 0.5rem 0;
+    transition: 0.4s;
+    /* z-index: 1200; */
+}
+
+.change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: #cdcdce;
+}
+
+.change.bar2 {opacity: 0;}
+
+.change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -5px);
+    background-color: #cdcdce;
+}
+
+
+  /* --------------- NAV MOBILE CONTENT --------------- */
+
+.nav-mobile-content {
+  height: 0;
+  text-align: center;
+  overflow-x: hidden;
+  transition: height ease-in 0.5s;
+
+}
+
+.nav-mobile-content.change {
+  height: 100vh;
+
+}
+
+.nav-mobile-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #cdcdce;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav-mobile-content a:hover, .nav-mobile-content a:focus {
+  color: #ffffff;
+}
+
+
+
+
+    /* =================== NAVIGATION - DESKTOP ==============  */
+
+.nav-desktop{
+  display: none;
+}
+
+/* ===================== MAIN ========================= */
+
+main {
+  width: 100%;
+}
+
+/* ============== Topper ================= */
+
+.topper {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #c5c5ce36 ; */
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.topper-first {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/daniel-mccullough-348488-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#topper_description_h3 {
+  padding-top: 20%;
+  padding-bottom: 38vh;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.topper_h1 {
+  font-size: 4.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+}
+
+.topper-second {
+  height: 100%;
+  min-height: 100vh;
+}
+
+#topper_img {
+  background-image: url("../images/maria-fernanda-gonzalez-569256-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 30vh;
+  max-height: 30vh;
+  min-width: 30vh;
+  max-width: 30vh;
+  border-radius: 50%;
+  border: 0.5rem solid green;
+  margin: auto;
+}
+
+.topper_name {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+}
+
+#topper_name_h2 {
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.topper_name h3 {
+  font-size: 2.5rem;
+}
+
+.topper_address {
+  display: flex;
+  flex-flow: column;
+
+}
+
+#topper_address_mail_h3 i, #topper_address_handy_h3 i, #topper_address_street_h3 i {
+  padding: 1.5rem 0 1.5rem 0;
+}
+#topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3{
+  font-size: 2.4rem;
+
+}
+
+#topper_address_handy_h3, #topper_address_mail_h3, #topper_address_street_h3{
+  padding-top: 2rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+
+#topper_address_handy_h3:hover, #topper_address_mail_h3:hover, #topper_address_street_h3:hover {
+  color: red;
+}
+
+#topper_address_tel_h3 {
+  display: none;
+}
+
+ /* =============== WAS ICH FÜR SIE TUN KANN  ================ */
+
+
+#block1 {
+  /* background-color: #c5c5ce36; */
+  height: 2300px;
+  border-top: 0.3rem solid black;
+  padding-bottom: 5rem;
+
+}
+
+#block1 h2 {
+  color: grey;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+
+        .box-frame {
+          width: 100%;
+          height: 10.3%;    /* !!!!Diesen Wert anpassen, wenn es mehr boxen gibt!!! */
+          position: relative;
+          margin-bottom: 4rem;
+        }
+
+        .text-box {
+          position: absolute;
+        }
+
+        .img-box {
+          position: absolute;
+          /* z-index: 100; */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .box-heading {
+          font-size: 1.8rem;
+          font-weight: bold;
+          text-align: center;
+          /* z-index: 300; */
+          color: white;
+          padding-bottom: 3rem;
+        }
+
+        .box-text {
+          text-align: justify;
+          font-size: 1.1rem;
+          color: white;
+          /* z-index: 300; */
+          padding: 0 2rem 0 2rem;
+        }
+
+        .text-align {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+
+        /* ALLIGNMENT OF TEXT AND IMAGE BOX */
+
+        .text-box-right {
+          background-color: #3b4147b5;
+          height: 75%;
+          width: 45%;
+          top: 5%;
+          right: 8%;
+          z-index: 2;
+        }
+
+        .img-box-left {
+          height: 60%;
+          width: 60%;
+          bottom: 4%;
+          left: 8%;
+        }
+
+        .text-box-left {
+          background-color: #3b4147b5;
+          height: 75%;
+          width: 45%;
+          top: 5%;
+          left: 8%;
+          z-index: 2;
+        }
+
+        .img-box-right {
+          height: 60%;
+          width: 60%;
+          bottom: 4%;
+          right: 8%;
+        }
+
+      /* ==========  GRUNDLAGENERMITTLUNG ============= */
+
+        #box2 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_grundlagenermittlung.jpg");
+        }
+
+        /* ==========  ENTWURFSPLANUNG ============= */
+
+        #box4 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vorplanung.jpg");
+        }
+
+        /* ==========  GEHNEMIGUNGSPLANUNG ============= */
+
+        #box6 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_genehmigungsplanung.jpg");
+        }
+
+        /* ==========  AUSFÜHRUNGSPLANUNG ============= */
+
+        #box8 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_ausfuehrungsplanung.jpg");
+        }
+
+        /* ==========  VORBEREITUNG VERGABE ============= */
+
+        #box10 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabevorbereitung.jpg");
+        }
+
+        /* ==========  MITWIRKUNG VERGABE ============= */
+
+        #box12 {
+          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabemitwirkung.jpg");
+        }
+
+
+        /* ==========  OBJEKTÜBERWACHUNG ============= */
+
+        #box14 {
+          background-image: url("https://www.ikz.de/fileadmin/news_import/FP1105_19_01.jpg");
+        }
+
+        /* ==========  OBJEKTBETREUUNG ============= */
+
+        #box16 {
+          background-image: url("https://www.hausmeister-berlin.info/images2/Objektbetreuung-Fotolia_72254083_XS-Gina_Sanders.jpg");
+        }
+
+
+
+        /* =========== PROJEKTE =================== */
+
+
+#block2 {
+  padding-top: 5rem;
+  border-top: 0.3rem solid black;
+}
+
+#block2 h2 {
+  color: grey;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.grid-container-block2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:  "haus1 haus1 haus2 haus2"
+                        "haus1 haus1 haus2 haus2"
+                        "haus3 haus3 haus4 haus4"
+                        "haus3 haus3 haus4 haus4";
+  grid-gap: 1rem;
+  padding: 5rem 4rem 5rem 4rem;
+}
+
+.block2-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+  /* === Haus1 === */
+
+#haus1 {
+  grid-area: haus1;
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+.overlay-haus {
+  height: 100%;
+  width: 100%;
+  background-color: #c5c5cebd;
+  float: right;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.8s ease-in;
+  transition: display 0.2s ease-in;
+}
+
+.overlay-haus h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-left: 1.7rem;
+  padding-right: 1.5rem;
+  text-align: justify;
+  padding-bottom: 3rem;
+}
+
+.overlay-haus h4 {
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+.appear {
+  display: block;
+  opacity: 1;
+}
+
+  /* === Haus2 === */
+
+#haus2 {
+  grid-area: haus2;
+  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+}
+
+  /* === Haus3 === */
+
+#haus3 {
+  grid-area: haus3;
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+  /* === Haus4 === */
+
+#haus4 {
+  grid-area: haus4;
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+
+    /* ================= FOOTER ===================  */
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  grid-template:  ". footer_header footer_header footer_header footer_header footer_header footer_header ."
+                  ". . footer_name footer_name footer_name footer_name . ."
+                  ". footer_address footer_address footer_address footer_address footer_address footer_address ."
+                  ". footer_handy footer_handy footer_handy footer_handy footer_handy footer_handy ."
+                  ". footer_mail footer_mail footer_mail footer_mail footer_mail footer_mail ."
+                  ". footer_impressum footer_impressum footer_impressum footer_datenschutz footer_datenschutz footer_datenschutz .";
+  padding: 4rem 0;
+  /* border-top: 0.3rem solid black; */
+  background-color: #3B4147;
+}
+
+#footer_header {
+  font-size: 2rem;
+  grid-area: footer_header;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#footer_name {
+  font-size: 2rem;
+  grid-area: footer_name;
+  padding-bottom: 2rem;
+  color: whitesmoke;
+}
+
+#footer_address {
+  font-size: 1rem;
+  grid-area: footer_address;
+  padding-bottom: 1.5rem;
+  color: whitesmoke;
+}
+
+#footer_address h3 {
+  font-size: 1rem;
+}
+
+#footer_handy {
+  grid-area: footer_handy;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+  color: whitesmoke;
+}
+
+#footer_mail {
+  grid-area: footer_mail;
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+  color: whitesmoke;
+}
+
+#footer_impressum {
+  grid-area: footer_impressum;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+#footer_datenschutz {
+  grid-area: footer_datenschutz;
+  font-size: 0.8rem;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+/* ========== Media Querys =============== */
+
+/*@media (max-width: 760px) {
+  body {
+    min-width: 760px;
+  }
+*/

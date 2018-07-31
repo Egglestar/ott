@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+
+      html {
+        height: 100%;
+        width: 100%;
+        font-size: 62.5%;
+      }
+      
+      .section1 {
+        background-color: red;
+        width: 100%;
+        height: 40%;
+        position: absolute;
+      }
+
+      .text-box {
+        position: absolute;
+      }
+
+      .img-box {
+        position: absolute;
+        z-index: 100;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .box-heading {
+        font-size: 6rem;
+        z-index: 300;
+        color: white;
+      }
+
+      .box-text {
+        text-align: justify;
+        color: white;
+        font-size: 2.6rem;
+        z-index: 300;
+        padding: 0 2rem 0 2rem;
+      }
+
+      .text-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #box1 {
+        background-color: grey;
+        height: 80%;
+        width: 40%;
+        top: 10%;
+        right: 8%;
+      }
+
+      #box2 {
+        background-color: whitesmoke;
+        height: 60%;
+        width: 60%;
+        top: 15%;
+        left: 10%;
+        background-image: url("resources/images/dawid-malecki-42536-unsplash.jpg");
+      }
+
+      .section2 {
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        background-color: black;
+        top: 40%;
+      }
+
+      #box3 {
+        background-color: lightblue;
+        height: 75%;
+        width: 45%;
+        top: 5%;
+        left: 8%;
+      }
+
+      #box4 {
+        background-color: lightyellow;
+        height: 60%;
+        width: 60%;
+        bottom: 4%;
+        right: 8%;
+        background-image: url("resources/images/dawid-malecki-42536-unsplash.jpg");
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+    <div class="section1">
+      <div id="box1" class="text-box text-align">
+        <h3 class="box-heading">ENTWURF</h3>
+          <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </h5>
+
+      </div>
+      <div id="box2" class="img-box">
+
+      </div>
+    </div>
+    <div class="section2">
+      <div id="box3" class="text-box text-align">
+        <h3 class="box-heading">PLANUNG</h3>
+          <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            </h5>
+      </div>
+      <div id="box4" class="img-box">
+
+      </div>
+    </div>
+  </body>
+</html>
