@@ -1,0 +1,96 @@
+
+/* ------------ TOPPER --------------- */
+
+#topper-first-projekte {
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+
+/* -------------- PROJEKTE ---------------- */
+
+
+.projekte {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-template-areas: ". . . . . . . . . ."; */
+}
+
+.projekt-box {
+  height: 40vh;
+  width: 80%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-bottom: 5rem;
+  /* border: 0.3rem solid #3b4147eb; */
+  -webkit-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+  box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  grid-template-areas:  "ph ph ph ph"
+                        "pd1 pd1 . ."
+                        "pd2 pd2 pd2 pd2"
+                        "pd3 pd3 . .";
+  align-items: center;
+  justify-content: center;
+}
+
+.projekt-heading {
+  grid-area: ph;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #3b4146;
+  background-color: rgba(219, 213, 216, 0.56);
+}
+
+.projekt-description1 {
+  grid-area: pd1;
+}
+
+.projekt-description2 {
+  grid-area: pd2;
+  color: #f1f1f1;
+}
+
+.projekt-description3 {
+  grid-area: pd3;
+}
+
+.projekt-text {
+  background-color: rgba(219, 213, 216, 0.56);
+  height: 80%;
+  width: 80%;
+}
+
+#projekt1 {
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+#projekt2 {
+  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+}
+
+#projekt3 {
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+#projekt4 {
+  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+}
+
+#projekt5 {
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+#projekt6 {
+  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+}
+
+#projekt7 {
+  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}

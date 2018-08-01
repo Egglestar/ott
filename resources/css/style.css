@@ -59,11 +59,12 @@ nav {
   z-index: 5;
   background-color: #3b4147eb;
   width: 100%;
+  max-width: 1500px;
   transition: width 0.3s;
 }
 
 nav.hidden {
-  width: 0%;
+  width: 0;
 }
     /* =================NAVIGATION - MOBILE ============= */
 
@@ -114,8 +115,7 @@ nav.hidden {
   height: 0;
   text-align: center;
   overflow-x: hidden;
-  transition: height ease-in 0.5s;
-
+  transition: height ease-in 0.2s;
 }
 
 .nav-mobile-content.change {
@@ -169,11 +169,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../images/daniel-mccullough-348488-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#topper-first-index {
+  background-image: url("../images/daniel-mccullough-348488-unsplash.jpg");
 }
 
 #topper_description_h3 {
@@ -569,8 +572,102 @@ footer {
 
 /* ========== Media Querys =============== */
 
-/*@media (max-width: 760px) {
-  body {
-    min-width: 760px;
+ /* =============== TABLET ================= */
+@media (min-width: 760px) {
+
+  i {
+    font-size: 6rem;
   }
-*/
+
+  .nav-button {
+    padding-right: 5rem;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 5rem;
+    height: 0.8rem;
+    margin: 0.8rem 0;
+  }
+
+  .nav-mobile-content a {
+    font-size: 8rem;
+  }
+
+  .change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-17px, 5px);
+    transform: rotate(-45deg) translate(-17px, 5px);
+  }
+
+  .change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-17px, -5px);
+    transform: rotate(45deg) translate(-17px, -5px);
+  }
+
+  .topper_h1 {
+    font-size: 10rem;
+  }
+  #topper_description_h3 {
+    padding-top: 10%;
+    padding-bottom: 30vh;
+    font-size: 4rem;
+  }
+
+  #topper_name_h2 {
+    font-size: 8rem;
+  }
+
+  .topper_name h3 {
+    font-size: 4rem;
+  }
+
+    #topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3 {
+    font-size: 4rem;
+  }
+
+  #block1 {
+    height: 3800px;
+  }
+
+  #block1 h2, #block2 h2 {
+    font-size: 6rem;
+  }
+
+  .box-frame {
+    height: 11.2%;
+  }
+
+  .box-heading {
+    font-size: 4rem;
+  }
+
+  .box-text {
+    font-size: 2.1rem;
+  }
+
+  .overlay-haus h3 {
+    font-size: 3rem;
+  }
+
+  .overlay-haus h4 {
+    font-size: 2.2rem;
+  }
+
+  #footer_header, #footer_name {
+    font-size: 3rem;
+  }
+
+  #footer_address h3, #footer_handy, #footer_mail {
+    font-size: 2rem;
+  }
+
+  #footer_datenschutz, #footer_impressum {
+    font-size: 1.5rem;
+  }
+  }
+
+
+  /* ==================== DESKTOP =================== */
+
+  @media screen (min-width: ) {
+
+  }
