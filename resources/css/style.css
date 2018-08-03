@@ -171,6 +171,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-attachment: local;
   background-attachment: fixed;
 }
 
@@ -227,6 +228,7 @@ main {
 .topper_address {
   display: flex;
   flex-flow: column;
+  padding-bottom: 3rem;
 }
 
 #topper_address_mail_h3 {
