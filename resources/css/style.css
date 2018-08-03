@@ -170,12 +170,11 @@ main {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-backgound-size: cover;
+  -webkit-background-size: cover;
   -o-backgound-size: cover;
   -moz-backgound-size: cover;
-  background-size: auto;
-  -webkit-background-attachment: local;
-  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: local;
 }
 
 #topper-first-index {
@@ -631,6 +630,12 @@ footer {
 
 
     /* === TOPPER-FIRST === */
+
+  .topper-first {
+    -webkit-background-attachment: fixed;
+    background-attachment: fixed;
+  }
+
   .topper_h1 {
     font-size: 10rem;
   }
