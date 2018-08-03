@@ -170,7 +170,10 @@ main {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-backgound-size: cover;
+  -o-backgound-size: cover;
+  -moz-backgound-size: cover;
+  background-size: auto;
   -webkit-background-attachment: local;
   background-attachment: fixed;
 }
