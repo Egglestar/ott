@@ -160,7 +160,6 @@ main {
   flex-direction: column;
   /* background-color: #c5c5ce36 ; */
   text-align: center;
-  padding-bottom: 5rem;
 }
 
 .topper-first {
@@ -228,15 +227,26 @@ main {
 .topper_address {
   display: flex;
   flex-flow: column;
+}
 
+#topper_address_mail_h3 {
+  grid-area: topper-mail;
+}
+
+#topper_address_handy_h3 {
+  grid-area: topper-handy;
+}
+
+#topper_address_street_h3 {
+  grid-area: topper-street;
 }
 
 #topper_address_mail_h3 i, #topper_address_handy_h3 i, #topper_address_street_h3 i {
   padding: 1.5rem 0 1.5rem 0;
 }
+
 #topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3{
   font-size: 2.4rem;
-
 }
 
 #topper_address_handy_h3, #topper_address_mail_h3, #topper_address_street_h3{
@@ -258,26 +268,27 @@ main {
 
 
 #block1 {
-  /* background-color: #c5c5ce36; */
-  height: 2300px;
+  height: 100%;
   border-top: 0.3rem solid black;
   padding-bottom: 5rem;
+  padding-top: 5rem;
 
 }
 
 #block1 h2 {
   color: grey;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  grid-area: block1-h2;
 }
 
 
 
         .box-frame {
           width: 100%;
-          height: 10.3%;    /* !!!!Diesen Wert anpassen, wenn es mehr boxen gibt!!! */
+          height: 300px;    /* !!!!Diesen Wert anpassen, wenn die Boxen größer/kleienr werden sollen!!! */
           position: relative;
           margin-bottom: 4rem;
         }
@@ -288,7 +299,6 @@ main {
 
         .img-box {
           position: absolute;
-          /* z-index: 100; */
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
@@ -298,7 +308,6 @@ main {
           font-size: 1.8rem;
           font-weight: bold;
           text-align: center;
-          /* z-index: 300; */
           color: white;
           padding-bottom: 3rem;
         }
@@ -352,52 +361,84 @@ main {
           right: 8%;
         }
 
-      /* ==========  GRUNDLAGENERMITTLUNG ============= */
+        #box1 {
+          grid-area: box1;
+        }
 
         #box2 {
+          grid-area: box2;
+        }
+
+        #box3 {
+          grid-area: box3;
+        }
+
+        #box4 {
+          grid-area: box4;
+        }
+
+        #box5 {
+          grid-area: box5;
+        }
+
+        #box6 {
+          grid-area: box6;
+        }
+
+        #box7 {
+          grid-area: box7;
+        }
+
+        #box8 {
+          grid-area: box8;
+        }
+
+      /* ==========  GRUNDLAGENERMITTLUNG ============= */
+
+        #box1-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_grundlagenermittlung.jpg");
         }
 
         /* ==========  ENTWURFSPLANUNG ============= */
 
-        #box4 {
+        #box2-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vorplanung.jpg");
         }
 
         /* ==========  GEHNEMIGUNGSPLANUNG ============= */
 
-        #box6 {
+        #box3-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_genehmigungsplanung.jpg");
         }
 
         /* ==========  AUSFÜHRUNGSPLANUNG ============= */
 
-        #box8 {
+        #box4-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_ausfuehrungsplanung.jpg");
         }
 
         /* ==========  VORBEREITUNG VERGABE ============= */
 
-        #box10 {
+        #box5-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabevorbereitung.jpg");
         }
 
         /* ==========  MITWIRKUNG VERGABE ============= */
 
-        #box12 {
+        #box6-2 {
           background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabemitwirkung.jpg");
         }
 
 
         /* ==========  OBJEKTÜBERWACHUNG ============= */
 
-        #box14 {
+        #box7-2 {
           background-image: url("https://www.ikz.de/fileadmin/news_import/FP1105_19_01.jpg");
         }
 
         /* ==========  OBJEKTBETREUUNG ============= */
 
-        #box16 {
+        #box8-2 {
           background-image: url("https://www.hausmeister-berlin.info/images2/Objektbetreuung-Fotolia_72254083_XS-Gina_Sanders.jpg");
         }
 
@@ -575,37 +616,20 @@ footer {
  /* =============== TABLET ================= */
 @media (min-width: 760px) {
 
+
+ /* ===== ICON === */
   i {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
-  .nav-button {
-    padding-right: 5rem;
-  }
+  /* === TOPPER === */
 
-  .bar1, .bar2, .bar3 {
-    width: 5rem;
-    height: 0.8rem;
-    margin: 0.8rem 0;
-  }
 
-  .nav-mobile-content a {
-    font-size: 8rem;
-  }
-
-  .change.bar1 {
-    -webkit-transform: rotate(-45deg) translate(-17px, 5px);
-    transform: rotate(-45deg) translate(-17px, 5px);
-  }
-
-  .change.bar3 {
-    -webkit-transform: rotate(45deg) translate(-17px, -5px);
-    transform: rotate(45deg) translate(-17px, -5px);
-  }
-
+    /* === TOPPER-FIRST === */
   .topper_h1 {
     font-size: 10rem;
   }
+
   #topper_description_h3 {
     padding-top: 10%;
     padding-bottom: 30vh;
@@ -613,35 +637,70 @@ footer {
   }
 
   #topper_name_h2 {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+
+  /* === TOPPER-SECOND === */
+
+  .topper_name {
+    padding-top: 8vh;
   }
 
   .topper_name h3 {
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  .topper_address {
+    padding-top: 15vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas:  "topper-handy topper-handy . topper-mail topper-mail . topper-street topper-street";
+  }
+
+  #topper_address_mail_h3 i, #topper_address_handy_h3 i, #topper_address_street_h3 i {
+    padding-bottom: 5rem;
   }
 
     #topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3 {
-    font-size: 4rem;
+    font-size: 2.8rem;
   }
 
-  #block1 {
-    height: 3800px;
-  }
+  /* === BLOCK 1 === */
 
   #block1 h2, #block2 h2 {
     font-size: 6rem;
   }
 
-  .box-frame {
-    height: 11.2%;
+  #block1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    grid-template-areas:  ". . block1-h2 block1-h2 block1-h2 block1-h2 block1-h2 block1-h2 block1-h2 block1-h2 . ."
+                          ". box1 box1 box1 box1 box1 box2 box2 box2 box2 box2 ."
+                          ". box3 box3 box3 box3 box3 box4 box4 box4 box4 box4 ."
+                          ". box5 box5 box5 box5 box5 box6 box6 box6 box6 box6 ."
+                          ". box7 box7 box7 box7 box7 box8 box8 box8 box8 box8 ."
   }
 
   .box-heading {
-    font-size: 4rem;
+    font-size: 1.9rem;
   }
 
   .box-text {
-    font-size: 2.1rem;
+    font-size: 1.4rem;
+  }
+
+  /* === BLOCK 2 === */
+
+  .grid-container-block2 {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:  ". haus1 haus1 haus1 haus2 haus2 haus2 ."
+                          ". haus1 haus1 haus1 haus2 haus2 haus2 ."
+                          ". haus3 haus3 haus3 haus4 haus4 haus4 ."
+                          ". haus3 haus3 haus3 haus4 haus4 haus4 .";
   }
 
   .overlay-haus h3 {
@@ -651,6 +710,8 @@ footer {
   .overlay-haus h4 {
     font-size: 2.2rem;
   }
+
+  /* === FOOTER === */
 
   #footer_header, #footer_name {
     font-size: 3rem;
@@ -663,11 +724,11 @@ footer {
   #footer_datenschutz, #footer_impressum {
     font-size: 1.5rem;
   }
-  }
+}
 
 
   /* ==================== DESKTOP =================== */
 
-  @media screen (min-width: ) {
+  /* @media screen (min-width: ) {
 
-  }
+  } */
