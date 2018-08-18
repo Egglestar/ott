@@ -58,7 +58,7 @@ i {
 nav {
   position: fixed;
   z-index: 5;
-  background-color: #3b4147eb;
+  background-color: #f2f2f4;
   width: 100%;
   max-width: 1500px;
   transition: width 0.3s;
@@ -73,8 +73,7 @@ nav.hidden {
 
 .nav-mobile-header {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
 }
@@ -111,7 +110,7 @@ nav.hidden {
 /* ================= NAV-MOBILE-LOGO ================= */
 
 .nav-mobile-logo {
- width: 30%;
+ width: 40%;
  height: auto;
 }
 
@@ -170,8 +169,8 @@ main {
 }
 
 .topper-first {
-  min-height: 100vh;
-  height: 100%;
+  margin-top: 8vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,7 +219,36 @@ main {
   -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  cursor: pointer;
 }
+
+.overlay-vita {
+  min-height: 30vh;
+  max-height: 30vh;
+  min-width: 30vh;
+  max-width: 30vh;
+  background-color: #c5c5cebd;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in;
+  /* transition: display 0.2s ease-in; */
+  border-radius: 50%;
+}
+
+.overlay-vita h3 {
+  font-weight: bold;
+}
+
+.overlay-vita:hover {
+  opacity: 1;
+}
+
+/* .appear-vita {
+  opacity: 1;
+} */
+
 
 .topper_name {
   display: flex;
@@ -229,12 +257,11 @@ main {
 }
 
 #topper_name_h2 {
-  font-weight: bold;
   padding-top: 3rem;
 }
 
 .topper_name h3 {
-  font-size: 2.5rem;
+  font-size: 1.4rem;
 }
 
 .topper_address {
@@ -243,39 +270,50 @@ main {
   padding-bottom: 3rem;
 }
 
-#topper_address_mail_h3 {
+.topper_address a, .topper_address h3 {
+  padding-top: 2rem;
+}
+
+#topper_address_mail_icon {
+  grid-area: icon-mail;
+  -webkit-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+#topper_address_handy_icon {
+  grid-area: icon-handy;
+  -webkit-transition: color .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+#topper_address_street_icon {
+  grid-area: icon-street;
+  -webkit-transition: color  .3s ease-in;
+  transition: color .3s ease-in;
+}
+
+#topper_address_mail {
   grid-area: topper-mail;
 }
 
-#topper_address_handy_h3 {
+#topper_address_handy {
   grid-area: topper-handy;
 }
 
-#topper_address_street_h3 {
+#topper_address_street {
   grid-area: topper-street;
 }
 
-#topper_address_mail_h3 i, #topper_address_handy_h3 i, #topper_address_street_h3 i {
+#topper_address_mail i, #topper_address_handy i, #topper_address_street i {
   padding: 1.5rem 0 1.5rem 0;
 }
 
-#topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3{
+.topper_address h3 {
   font-size: 2.4rem;
 }
 
-#topper_address_handy_h3, #topper_address_mail_h3, #topper_address_street_h3{
-  padding-top: 2rem;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-
-#topper_address_handy_h3:hover, #topper_address_mail_h3:hover, #topper_address_street_h3:hover {
-  color: red;
-}
-
-#topper_address_tel_h3 {
-  display: none;
+#topper_address_mail_icon:hover, #topper_address_street_icon:hover, #topper_address_handy_icon:hover {
+  color: #f2f2f4;
 }
 
  /* =============== WAS ICH FÜR SIE TUN KANN  ================ */
@@ -300,167 +338,167 @@ main {
 
 
 
-        .box-frame {
-          width: 100%;
-          height: 300px;    /* !!!!Diesen Wert anpassen, wenn die Boxen größer/kleienr werden sollen!!! */
-          position: relative;
-          margin-bottom: 4rem;
-        }
+.box-frame {
+  width: 100%;
+  height: 300px;    /* !!!!Diesen Wert anpassen, wenn die Boxen größer/kleienr werden sollen!!! */
+  position: relative;
+  margin-bottom: 4rem;
+}
 
-        .text-box {
-          position: absolute;
-          -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-          -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-          box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-        }
+.text-box {
+  position: absolute;
+  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+}
 
-        .img-box {
-          position: absolute;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-          -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-          box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-        }
+.img-box {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+}
 
-        .box-heading {
-          font-size: 1.8rem;
-          font-weight: bold;
-          text-align: center;
-          color: white;
-          padding-bottom: 3rem;
-        }
+.box-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding-bottom: 3rem;
+}
 
-        .box-text {
-          text-align: justify;
-          font-size: 1.1rem;
-          color: white;
-          /* z-index: 300; */
-          padding: 0 2rem 0 2rem;
-        }
+.box-text {
+  text-align: justify;
+  font-size: 1.1rem;
+  color: white;
+  /* z-index: 300; */
+  padding: 0 2rem 0 2rem;
+}
 
-        .text-align {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-        }
+.text-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-        /* ALLIGNMENT OF TEXT AND IMAGE BOX */
+/* ALLIGNMENT OF TEXT AND IMAGE BOX */
 
-        .text-box-right {
-          background-color: #3b4147b5;
-          height: 75%;
-          width: 45%;
-          top: 5%;
-          right: 8%;
-          z-index: 2;
-        }
+.text-box-right {
+  background-color: #3b4147b5;
+  height: 75%;
+  width: 45%;
+  top: 5%;
+  right: 8%;
+  z-index: 2;
+}
 
-        .img-box-left {
-          height: 60%;
-          width: 60%;
-          bottom: 4%;
-          left: 8%;
-        }
+.img-box-left {
+  height: 60%;
+  width: 60%;
+  bottom: 4%;
+  left: 8%;
+}
 
-        .text-box-left {
-          background-color: #3b4147b5;
-          height: 75%;
-          width: 45%;
-          top: 5%;
-          left: 8%;
-          z-index: 2;
-        }
+.text-box-left {
+  background-color: #3b4147b5;
+  height: 75%;
+  width: 45%;
+  top: 5%;
+  left: 8%;
+  z-index: 2;
+}
 
-        .img-box-right {
-          height: 60%;
-          width: 60%;
-          bottom: 4%;
-          right: 8%;
-        }
+.img-box-right {
+  height: 60%;
+  width: 60%;
+  bottom: 4%;
+  right: 8%;
+}
 
-        #box1 {
-          grid-area: box1;
-        }
+#box1 {
+  grid-area: box1;
+}
 
-        #box2 {
-          grid-area: box2;
-        }
+#box2 {
+  grid-area: box2;
+}
 
-        #box3 {
-          grid-area: box3;
-        }
+#box3 {
+  grid-area: box3;
+}
 
-        #box4 {
-          grid-area: box4;
-        }
+#box4 {
+  grid-area: box4;
+}
 
-        #box5 {
-          grid-area: box5;
-        }
+#box5 {
+  grid-area: box5;
+}
 
-        #box6 {
-          grid-area: box6;
-        }
+#box6 {
+  grid-area: box6;
+}
 
-        #box7 {
-          grid-area: box7;
-        }
+#box7 {
+  grid-area: box7;
+}
 
-        #box8 {
-          grid-area: box8;
-        }
+#box8 {
+  grid-area: box8;
+}
 
-      /* ==========  GRUNDLAGENERMITTLUNG ============= */
+/* ==========  GRUNDLAGENERMITTLUNG ============= */
 
-        #box1-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_grundlagenermittlung.jpg");
-        }
+#box1-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_grundlagenermittlung.jpg");
+}
 
-        /* ==========  ENTWURFSPLANUNG ============= */
+/* ==========  ENTWURFSPLANUNG ============= */
 
-        #box2-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vorplanung.jpg");
-        }
+#box2-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vorplanung.jpg");
+}
 
-        /* ==========  GEHNEMIGUNGSPLANUNG ============= */
+/* ==========  GEHNEMIGUNGSPLANUNG ============= */
 
-        #box3-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_genehmigungsplanung.jpg");
-        }
+#box3-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_genehmigungsplanung.jpg");
+}
 
-        /* ==========  AUSFÜHRUNGSPLANUNG ============= */
+/* ==========  AUSFÜHRUNGSPLANUNG ============= */
 
-        #box4-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_ausfuehrungsplanung.jpg");
-        }
+#box4-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_ausfuehrungsplanung.jpg");
+}
 
-        /* ==========  VORBEREITUNG VERGABE ============= */
+/* ==========  VORBEREITUNG VERGABE ============= */
 
-        #box5-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabevorbereitung.jpg");
-        }
+#box5-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabevorbereitung.jpg");
+}
 
-        /* ==========  MITWIRKUNG VERGABE ============= */
+/* ==========  MITWIRKUNG VERGABE ============= */
 
-        #box6-2 {
-          background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabemitwirkung.jpg");
-        }
+#box6-2 {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabemitwirkung.jpg");
+}
 
 
-        /* ==========  OBJEKTÜBERWACHUNG ============= */
+/* ==========  OBJEKTÜBERWACHUNG ============= */
 
-        #box7-2 {
-          background-image: url("https://www.ikz.de/fileadmin/news_import/FP1105_19_01.jpg");
-        }
+#box7-2 {
+  background-image: url("https://www.ikz.de/fileadmin/news_import/FP1105_19_01.jpg");
+}
 
-        /* ==========  OBJEKTBETREUUNG ============= */
+/* ==========  OBJEKTBETREUUNG ============= */
 
-        #box8-2 {
-          background-image: url("https://www.hausmeister-berlin.info/images2/Objektbetreuung-Fotolia_72254083_XS-Gina_Sanders.jpg");
-        }
+#box8-2 {
+  background-image: url("https://www.hausmeister-berlin.info/images2/Objektbetreuung-Fotolia_72254083_XS-Gina_Sanders.jpg");
+}
 
 
 
@@ -513,9 +551,9 @@ main {
   background-color: #c5c5cebd;
   float: right;
   opacity: 0;
-  display: none;
-  transition: opacity 0.8s ease-in;
-  transition: display 0.2s ease-in;
+  /* display: none; */
+  transition: opacity 0.25s ease-in;
+  /* transition: display 0.2s ease-in; */
 }
 
 .overlay-haus h3{
@@ -533,7 +571,7 @@ main {
 }
 
 .appear {
-  display: block;
+  /* display: block; */
   opacity: 1;
 }
 
@@ -691,14 +729,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 1rem;
-    grid-template-areas:  "topper-handy topper-handy . topper-mail topper-mail . topper-street topper-street";
+    grid-template-areas:  "icon-handy icon-handy . icon-mail icon-mail . icon-street icon-street"
+                          "topper-handy topper-handy . topper-mail topper-mail . topper-street topper-street";
   }
 
-  #topper_address_mail_h3 i, #topper_address_handy_h3 i, #topper_address_street_h3 i {
+  #topper_address_mail_icon i, #topper_address_handy_icon i, #topper_address_street_icon i {
     padding-bottom: 5rem;
   }
 
-    #topper_address_handy_h3 h3, #topper_address_mail_h3 h3, #topper_address_street_h3 h3 {
+    #topper_address_handy, #topper_address_mail, #topper_address_street {
     font-size: 2.8rem;
   }
 

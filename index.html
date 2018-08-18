@@ -31,12 +31,12 @@
     <nav class="">
       <div class="nav-mobile">
         <div class="nav-mobile-header">
-          <div class="nav-button">
+          <img class="nav-mobile-logo" src="resources/images/AA_Logo_41474d_small.svg" alt="Logo Architektur Artelier">
+          <!-- <div class="nav-button">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-          </div>
-            <img class="nav-mobile-logo" src="resources/images/AA_Logo_white_small.svg" alt="Logo white">
+          </div> -->
         </div>
 
         <div class="nav-mobile-content">
@@ -83,15 +83,22 @@
           <div class="topper_name">
             <div id="topper_img">
               <!-- Image Daniel Ott -->
+              <a href="vita.html">
+                <div class="overlay-vita">
+                  <h3>Click <wbr>for <wbr>Vita</h3>
+                </div>
+              </a>
             </div>
             <h2 id="topper_name_h2">Daniel Ott</h2>
             <h3>Master of Arts Architektur</h3>
           </div>
           <div class="topper_address">
-            <a id="topper_address_tel_h3" href="tel:+4974729881829"><h3>Tel.: +49 7472 / 9881829</h3></a>
-            <a id="topper_address_handy_h3" href="tel:+491621837200"><i class="fas fa-phone"></i><h3>+49 162 / 183 7200</h3></a>
-            <a id="topper_address_mail_h3" href="mailto:daniel_ott@architekturartelier.de"><i class="fas fa-envelope"></i><h3>info@architektur<wbr>artelier.de</h3></a>
-            <a id="topper_address_street_h3" href="" target="_blank"><i class="fas fa-map-marker-alt"></i><h3>Brühlstraße 3</h3> <br> <h3>72149 Neustetten</h3> </a>
+            <a id="topper_address_handy_icon" href="tel:+491621837200"><i class="fas fa-phone"></i></a>
+            <h3 id="topper_address_handy">+49 162 / 183 7200</h3>
+            <a id="topper_address_mail_icon" href="mailto:daniel_ott@architekturartelier.de"><i class="fas fa-envelope"></i></a>
+            <h3 id="topper_address_mail">daniel_ott<wbr>@architektur<wbr>artelier.de</h3>
+            <a id="topper_address_street_icon" href="" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+            <h3 id="topper_address_street">Brühlstraße 3 <wbr>72149 Neustetten</h3>
           </div>
         </div>
       </div>
@@ -274,6 +281,14 @@
             $(".bar1, .bar2, .bar3").css("background-color", "#cdcdce");
         });
     </script>
+
+    <!-- Hover function for Header Image -->
+
+    <!-- <script>
+      $("#topper_img").hover(function(){
+        $(".overlay-vita").toggleClass("appear-vita")
+      });
+    </script> -->
 
     <!-- <script>
     // nav scroll function to hide nav when scrolling down

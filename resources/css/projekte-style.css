@@ -10,6 +10,7 @@
 
 
 .projekte {
+  margin-top: 5rem;
   /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
@@ -28,7 +29,7 @@
   -webkit-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
   -moz-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
   box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
   grid-template-areas:  "ph ph ph ph"
@@ -36,10 +37,10 @@
                         "pd2 pd2 pd2 pd2"
                         "pd3 pd3 . .";
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
-.projekt-heading {
+/* .projekt-heading {
   grid-area: ph;
   font-size: 3rem;
   font-weight: bold;
@@ -65,7 +66,13 @@
   background-color: rgba(219, 213, 216, 0.56);
   height: 80%;
   width: 80%;
+} */
+
+.projekt-text {
+  background-color: rgba(123, 134, 112, 1);
+  height: 70%;
 }
+
 
 #projekt1 {
   background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
