@@ -12,44 +12,45 @@
     <!-- ======== CSS ========== -->
     <link rel="stylesheet" href="../resources/css/reset.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> <!-- AOS Scroll Animation CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet"> <!-- Roboto Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> <!-- Montserrat  Font -->
-    <link href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700" rel="stylesheet"> <!-- Archivo Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900" rel="stylesheet"> <!-- Poppims Font -->
+    <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet"> <!-- GRUPPO FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> <!-- ARCHITECTS DAUGHTER FONTS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- fontawesome - Icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../resources/css/style.css">
     <link rel="stylesheet" href="../resources/css/projekte-style.css">
 
     <!-- ========== PLUGINS / SCRIPT ============= -->
     <link href="../resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon"> <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="80x80" href="resources/images/favicon.ico" type="image/x-icon"> <!-- Favicon for Apple -->
-    <script src="../resources/js/jquery-3.3.1.min.js"></script> <!-- jQuery Plugin -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!-- jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
     <script src="../resources/js/jquery.scrollify.js"></script> <!-- Scrollify for Scroll-motion -->
 
 
   </head>
   <body>
+
     <!-- ================= NAV ===================== -->
   <nav class="">
     <div class="nav-mobile">
       <div class="nav-mobile-header">
-        <div class="nav-button">
+        <img class="nav-mobile-logo" src="../resources/images/AA_Logo_41474d_small.svg" alt="Logo Architektur Artelier">
+        <!-- <div class="nav-button">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
-        </div>
-          <img class="nav-mobile-logo" src="../resources/images/AA_Logo_white_small.svg" alt="Logo white">
+        </div> -->
       </div>
 
-      <div class="nav-mobile-content">
+      <!-- <div class="nav-mobile-content">
         <a href="#">Startseite</a>
         <a href="#">Leistungen</a>
-        <a href="#">Projekte</a>
+        <a href="projekte/projekte.html">Projekte</a>
         <a href="#">Vita</a>
         <a href="#">Kontakt</a>
         <a href="#">Impressum</a>
         <a href="#">Datenschutz</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="nav-desktop">
@@ -73,7 +74,6 @@
       <!-- ======================= TOPPER FIRST SECTION ================= -->
 
       <div id="topper-first-projekte" class="topper-first section">
-        <h3 id="topper_description_h3">Architekt | Bauplanung | Bauleitung</h3>
         <h1 class="topper_h1">Projekte</h1>
       </div>
     </div>
@@ -82,53 +82,289 @@
     <!-- ============================ PROJEKTE ========================== -->
 
 
-      <div class="projekte">
+    <div class="projekte">
 
-          <div id="projekt1" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <!-- <p class="projekt-description1">Freistehendes Einfamilienhaus</p>
-            <p class="projekt-description2">Fertiggestellt: 2017</p>
-            <p class="projekt-description3">weitere beschreibung</p> -->
-          </div>
-          <div id="projekt2" class="projekt-box">
-            <div class="projekt-text">
-              <h4>Einfamilenhaus</h4>
-              <p>Freistehendes Einfamilienhaus</p>
-              <p>Fertiggestellt: 2012</p>
+     <!-- *** WOHNEN ***  -->
+
+      <!--  EINFAMILIENHAUS   -->
+
+        <div id="EFH" class="projekt-container">
+          <h2>Einfamilienhaus</h2>
+
+          <!-- +++ Einfamilenhaus Carousel +++ -->
+          <div id="carouselEFH" class="carousel slide" data-interval="false" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselEFH" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselEFH" data-slide-to="1"></li>
+              <li data-target="#carouselEFH" data-slide-to="2"></li>
+              <li data-target="#carouselEFH" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div id="efh1" class="projekt-box d-block w-90">
+                  <!-- <h4>#1</h4> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="efh2" class="projekt-box d-block w-90">
+                  <div class="projekt-text">
+                    <!-- <h4>#2</h4> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="efh3" class="projekt-box d-block w-90">
+                  <!-- <h4>#3</h4> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="efh4" class="projekt-box d-block w-90">
+                  <!-- <h4>#4</h4> -->
+                </div>
+              </div>
             </div>
-
-          </div>
-          <div id="projekt3" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <p>Freistehendes Einfamilienhaus</p>
-            <p>Fertiggestellt: 2018</p>
-          </div>
-          #
-          <div id="projekt4" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <p>Freistehendes Einfamilienhaus</p>
-            <p>Fertiggestellt: 2017</p>
+            <a class="carousel-control-prev" href="#carouselEFH" role="button" data-slide="prev">
+              <i class="fas fa-angle-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEFH" role="button" data-slide="next">
+              <i class="fas fa-angle-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
 
-          <div id="projekt5" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <p>Freistehendes Einfamilienhaus</p>
-            <p>Fertiggestellt: 2017</p>
-          </div>
+        </div>
 
-          <div id="projekt6" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <p>Freistehendes Einfamilienhaus</p>
-            <p>Fertiggestellt: 2017</p>
-          </div>
 
-          <div id="projekt7" class="projekt-box">
-            <h4 class="projekt-heading">Einfamilenhaus</h4>
-            <p>Freistehendes Einfamilienhaus</p>
-            <p>Fertiggestellt: 2017</p>
+        <!--  MEHRFAMILIENHAUS  -->
+        <div id="MFH" class="projekt-container">
+          <h2>Mehrfamilienhaus</h2>
+
+          <!-- +++ Mehrfamielenhaus Carousel +++ -->
+          <div id="carouselMFH" class="carousel slide" data-interval="false" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselMFH" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselMFH" data-slide-to="1"></li>
+              <li data-target="#carouselMFH" data-slide-to="2"></li>
+              <li data-target="#carouselMFH" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div id="mfh1" class="projekt-box d-block w-90">
+                  <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                  <p class="projekt-description1">Freistehendes Einfamilienhaus</p>
+                  <p class="projekt-description2">Fertiggestellt: 2017</p>
+                  <p class="projekt-description3">weitere beschreibung</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="mfh2" class="projekt-box d-block w-90">
+                  <!-- <div class="projekt-text">
+                    <h4>Einfamilenhaus</h4>
+                    <p>Freistehendes Einfamilienhaus</p>
+                    <p>Fertiggestellt: 2012</p> -->
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="mfh3" class="projekt-box d-block w-90">
+                  <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                  <p>Freistehendes Einfamilienhaus</p>
+                  <p>Fertiggestellt: 2018</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="mfh4" class="projekt-box d-block w-90">
+                  <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                  <p>Freistehendes Einfamilienhaus</p>
+                  <p>Fertiggestellt: 2018</p> -->
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselMFH" role="button" data-slide="prev">
+              <i class="fas fa-angle-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselMFH" role="button" data-slide="next">
+              <i class="fas fa-angle-right"></i>
+              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+              <span class="sr-only">Next</span>
+            </a>
           </div>
+        </div>
+      <!-- *** GEWERBE *** -->
+
+      <div id="GW" class="projekt-container">
+        <h2>Gewerbe</h2>
+
+        <!-- +++ Gewerbe Carousel +++ -->
+        <div id="carouselGW" class="carousel slide" data-interval="false" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselGW" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselGW" data-slide-to="1"></li>
+            <li data-target="#carouselGW" data-slide-to="2"></li>
+            <li data-target="#carouselGW" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner container">
+            <div class="carousel-item active">
+              <div id="gw1" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p class="projekt-description1">Freistehendes Einfamilienhaus</p>
+                <p class="projekt-description2">Fertiggestellt: 2017</p>
+                <p class="projekt-description3">weitere beschreibung</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="gw2" class="projekt-box d-block w-90">
+                <!-- <div class="projekt-text">
+                  <h4>Einfamilenhaus</h4>
+                  <p>Freistehendes Einfamilienhaus</p>
+                  <p>Fertiggestellt: 2012</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="gw3" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="gw4" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselGW" role="button" data-slide="prev">
+            <i class="fas fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselGW" role="button" data-slide="next">
+            <i class="fas fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
       </div>
+
+      <!-- *** SANIEREN *** -->
+
+      <div id="SAN" class="projekt-container">
+        <h2>Sanieren</h2>
+
+        <!-- +++ Sanieren Carousel +++ -->
+        <div id="carouselSAN" class="carousel slide" data-interval="false" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselSAN" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSAN" data-slide-to="1"></li>
+            <li data-target="#carouselSAN" data-slide-to="2"></li>
+            <li data-target="#carouselSAN" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner container">
+            <div class="carousel-item active">
+              <!-- <div id="san1" class="projekt-box d-block w-90">
+                <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p class="projekt-description1">Freistehendes Einfamilienhaus</p>
+                <p class="projekt-description2">Fertiggestellt: 2017</p>
+                <p class="projekt-description3">weitere beschreibung</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="san2" class="projekt-box d-block w-90">
+                <div class="projekt-text">
+                  <!-- <h4>Einfamilenhaus</h4>
+                  <p>Freistehendes Einfamilienhaus</p>
+                  <p>Fertiggestellt: 2012</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="san3" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="san4" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselSAN" role="button" data-slide="prev">
+            <i class="fas fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselSAN" role="button" data-slide="next">
+            <i class="fas fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- *** ÖFFNETLICH *** -->
+
+      <div id="OEF" class="projekt-container">
+        <h2>Öffentlich</h2>
+
+        <!-- +++ Öffentlich Carousel +++ -->
+        <div id="carouselOEF" class="carousel slide" data-interval="false" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselOEF" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselOEF" data-slide-to="1"></li>
+            <li data-target="#carouselOEF" data-slide-to="2"></li>
+            <li data-target="#carouselOEF" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner container">
+            <div class="carousel-item active">
+              <div id="oef1" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p class="projekt-description1">Freistehendes Einfamilienhaus</p>
+                <p class="projekt-description2">Fertiggestellt: 2017</p>
+                <p class="projekt-description3">weitere beschreibung</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="oef2" class="projekt-box d-block w-90">
+                <div class="projekt-text">
+                  <!-- <h4>Einfamilenhaus</h4>
+                  <p>Freistehendes Einfamilienhaus</p>
+                  <p>Fertiggestellt: 2012</p> -->
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="oef3" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div id="oef4" class="projekt-box d-block w-90">
+                <!-- <h4 class="projekt-heading">Einfamilenhaus</h4>
+                <p>Freistehendes Einfamilienhaus</p>
+                <p>Fertiggestellt: 2018</p> -->
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselOEF" role="button" data-slide="prev">
+            <i class="fas fa-angle-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselOEF" role="button" data-slide="next">
+            <i class="fas fa-angle-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
 
   </main>
 

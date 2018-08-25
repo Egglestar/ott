@@ -3,7 +3,7 @@
 html {
   font-size: 62.5%;
   width: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Gruppo', cursive;
   color: #41474d;
 }
 
@@ -16,7 +16,6 @@ body {
 
 h1 {
   font-size: 5rem;
-  font-weight: bold;
 }
 
 h2 {
@@ -33,7 +32,6 @@ h4 {
 
 h5 {
   font-size: 1.8rem;
-  font-weight: bold;
 }
 
 h6 {
@@ -57,11 +55,15 @@ i {
     /* ================== NAVIGATION ============== */
 nav {
   position: fixed;
-  z-index: 5;
+  z-index: 2005;
   background-color: #f2f2f4;
   width: 100%;
   max-width: 1500px;
+  height: 10vh;
   transition: width 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav.hidden {
@@ -71,12 +73,7 @@ nav.hidden {
 
     /* =================NAVIGATION - MOBILE ============= */
 
-.nav-mobile-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 2rem;
-}
+
 
 /* ---------- NAV - MENU ICON ------- */
 
@@ -110,7 +107,7 @@ nav.hidden {
 /* ================= NAV-MOBILE-LOGO ================= */
 
 .nav-mobile-logo {
- width: 40%;
+ width: 30vw;
  height: auto;
 }
 
@@ -173,6 +170,7 @@ main {
   min-height: 92vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,22 +185,16 @@ main {
   background-image: url("../images/daniel-mccullough-348488-unsplash.jpg");
 }
 
-#topper_description_h3 {
-  padding-top: 20%;
-  padding-bottom: 38vh;
-  font-size: 1.8rem;
-  color: white;
-}
-
 .topper_h1 {
   font-size: 4.5rem;
-  font-family: 'Poppins', sans-serif;
   color: whitesmoke;
 }
 
 .topper-second {
   height: 100%;
   min-height: 100vh;
+  background: #3b4147;
+  color: whitesmoke;
 }
 
 #topper_img {
@@ -216,9 +208,11 @@ main {
   border-radius: 50%;
   /* border: 0.5rem solid #41474d; */
   margin: auto;
-  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  /* -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  box-shadow: 1px 3px 5px 0px #3b4147,
+              5px 5px 10px 0px lightgrey,
+              10px 10px 22px 0px whitesmoke; */
   cursor: pointer;
 }
 
@@ -227,7 +221,8 @@ main {
   max-height: 30vh;
   min-width: 30vh;
   max-width: 30vh;
-  background-color: #c5c5cebd;
+  background-color: #3b4147d4;
+  color: whitesmoke;
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -235,10 +230,6 @@ main {
   transition: opacity 0.3s ease-in;
   /* transition: display 0.2s ease-in; */
   border-radius: 50%;
-}
-
-.overlay-vita h3 {
-  font-weight: bold;
 }
 
 .overlay-vita:hover {
@@ -278,18 +269,21 @@ main {
   grid-area: icon-mail;
   -webkit-transition: color .3s ease-in;
   transition: color .3s ease-in;
+  color: whitesmoke;
 }
 
 #topper_address_handy_icon {
   grid-area: icon-handy;
   -webkit-transition: color .3s ease-in;
   transition: color .3s ease-in;
+  color: whitesmoke;
 }
 
 #topper_address_street_icon {
   grid-area: icon-street;
   -webkit-transition: color  .3s ease-in;
   transition: color .3s ease-in;
+  color: whitesmoke;
 }
 
 #topper_address_mail {
@@ -313,23 +307,123 @@ main {
 }
 
 #topper_address_mail_icon:hover, #topper_address_street_icon:hover, #topper_address_handy_icon:hover {
-  color: #f2f2f4;
+  color: #a1a1a4;
 }
 
- /* =============== WAS ICH FÜR SIE TUN KANN  ================ */
+
+
+/* =========== PROJEKTE =================== */
+
+
+#block2 {
+padding-top: 5rem;
+}
+
+#block2 h2 {
+color: #3b4147;
+text-align: center;
+}
+
+
+.grid-container-block2 {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-areas:  "haus1 haus1 haus2 haus2"
+                "haus1 haus1 haus2 haus2"
+                "haus3 haus3 haus4 haus4"
+                "haus3 haus3 haus4 haus4";
+grid-gap: 3rem;
+padding: 5rem 4rem 5rem 4rem;
+}
+
+.block2-box {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 160px;
+-webkit-box-shadow: 1px 2px 5px 0px #3b4147,
+                    2px 4px 10px 0px #3b4147,
+                    4px 8px 20px 0px #3b4147;
+-moz-box-shadow:    1px 2px 5px 0px #3b4147,
+                    2px 4px 10px 0px #3b4147,
+                    4px 8px 20px 0px #3b4147;
+box-shadow:         1px 2px 5px 0px #3b4147,
+                    2px 4px 10px 0px #3b4147,
+                    4px 8px 20px 0px #3b4147;
+}
+
+/* === Haus1 === */
+
+#haus1 {
+grid-area: haus1;
+background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+.overlay-haus {
+height: 100%;
+width: 100%;
+color: whitesmoke;
+background-color: #3b4147d4;
+float: right;
+opacity: 0;
+/* display: none; */
+transition: opacity 0.25s ease-in;
+/* transition: display 0.2s ease-in; */
+}
+
+.overlay-haus h3{
+font-size: 2rem;
+padding: 2rem 0.7rem 0 0.7rem;
+text-align: justify;
+padding-bottom: 3rem;
+}
+
+.overlay-haus h4 {
+font-size: 1.2rem;
+padding: 0 0.7rem;
+text-align: justify;
+}
+
+.appear {
+/* display: block; */
+opacity: 1;
+}
+
+/* === Haus2 === */
+
+#haus2 {
+grid-area: haus2;
+background-image: url("../images/pixasquare-622732-unsplash.jpg");
+}
+
+/* === Haus3 === */
+
+#haus3 {
+grid-area: haus3;
+background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+/* === Haus4 === */
+
+#haus4 {
+grid-area: haus4;
+background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+}
+
+
+
+ /* =============== LEISTUNGEN  ================ */
 
 
 #block1 {
   height: 100%;
-  border-top: 0.3rem solid #3b4147b5;
   padding-bottom: 5rem;
   padding-top: 5rem;
-
+  background: #3b4147;
 }
 
 #block1 h2 {
-  color: grey;
-  font-weight: bold;
+  color: whitesmoke;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -347,9 +441,9 @@ main {
 
 .text-box {
   position: absolute;
-  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  /* -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1); */
 }
 
 .img-box {
@@ -357,23 +451,22 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  /* -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
+  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1); */
 }
 
 .box-heading {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.6rem;
   text-align: center;
-  color: white;
+  color: #000000ed;
   padding-bottom: 3rem;
 }
 
 .box-text {
   text-align: justify;
   font-size: 1.1rem;
-  color: white;
+  color: #000000;
   /* z-index: 300; */
   padding: 0 2rem 0 2rem;
 }
@@ -388,7 +481,7 @@ main {
 /* ALLIGNMENT OF TEXT AND IMAGE BOX */
 
 .text-box-right {
-  background-color: #3b4147b5;
+  background-color: #f5f5f5e0;
   height: 75%;
   width: 45%;
   top: 5%;
@@ -404,7 +497,7 @@ main {
 }
 
 .text-box-left {
-  background-color: #3b4147b5;
+  background-color: #f5f5f5e0;
   height: 75%;
   width: 45%;
   top: 5%;
@@ -443,13 +536,13 @@ main {
   grid-area: box6;
 }
 
-#box7 {
+/* #box7 {
   grid-area: box7;
 }
 
 #box8 {
   grid-area: box8;
-}
+} */
 
 /* ==========  GRUNDLAGENERMITTLUNG ============= */
 
@@ -502,105 +595,11 @@ main {
 
 
 
-        /* =========== PROJEKTE =================== */
-
-
-#block2 {
-  padding-top: 5rem;
-  border-top: 0.3rem solid #3b4147b5;
-}
-
-#block2 h2 {
-  color: grey;
-  font-weight: bold;
-  text-align: center;
-}
-
-
-.grid-container-block2 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:  "haus1 haus1 haus2 haus2"
-                        "haus1 haus1 haus2 haus2"
-                        "haus3 haus3 haus4 haus4"
-                        "haus3 haus3 haus4 haus4";
-  grid-gap: 3rem;
-  padding: 5rem 4rem 5rem 4rem;
-}
-
-.block2-box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 160px;
-  -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-  -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-  box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
-}
-
-  /* === Haus1 === */
-
-#haus1 {
-  grid-area: haus1;
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
-}
-
-.overlay-haus {
-  height: 100%;
-  width: 100%;
-  background-color: #c5c5cebd;
-  float: right;
-  opacity: 0;
-  /* display: none; */
-  transition: opacity 0.25s ease-in;
-  /* transition: display 0.2s ease-in; */
-}
-
-.overlay-haus h3{
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 2rem 0.7rem 0 0.7rem;
-  text-align: justify;
-  padding-bottom: 3rem;
-}
-
-.overlay-haus h4 {
-  font-size: 1.2rem;
-  padding: 0 0.7rem;
-  text-align: justify;
-}
-
-.appear {
-  /* display: block; */
-  opacity: 1;
-}
-
-  /* === Haus2 === */
-
-#haus2 {
-  grid-area: haus2;
-  background-image: url("../images/pixasquare-622732-unsplash.jpg");
-}
-
-  /* === Haus3 === */
-
-#haus3 {
-  grid-area: haus3;
-  background-image: url("../images/scott-webb-167099-unsplash.jpg");
-}
-
-  /* === Haus4 === */
-
-#haus4 {
-  grid-area: haus4;
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
-}
-
-
     /* ================= FOOTER ===================  */
 
 footer {
   width: 100%;
+  color: #3b4147;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1rem;
@@ -613,29 +612,23 @@ footer {
                   ". footer_mail footer_mail footer_mail footer_mail footer_mail footer_mail ."
                   ". footer_impressum footer_impressum footer_impressum footer_datenschutz footer_datenschutz footer_datenschutz .";
   padding: 4rem 0;
-  /* border-top: 0.3rem solid black; */
-  background-color: #3B4147;
 }
 
 #footer_header {
   font-size: 2rem;
   grid-area: footer_header;
-  font-weight: bold;
-  color: whitesmoke;
 }
 
 #footer_name {
   font-size: 2rem;
   grid-area: footer_name;
   padding-bottom: 2rem;
-  color: whitesmoke;
 }
 
 #footer_address {
   font-size: 1rem;
   grid-area: footer_address;
   padding-bottom: 1.5rem;
-  color: whitesmoke;
 }
 
 #footer_address h3 {
@@ -646,28 +639,24 @@ footer {
   grid-area: footer_handy;
   font-size: 1rem;
   padding-bottom: 1.5rem;
-  color: whitesmoke;
 }
 
 #footer_mail {
   grid-area: footer_mail;
   font-size: 1rem;
   padding-bottom: 1.5rem;
-  color: whitesmoke;
 }
 
 #footer_impressum {
   grid-area: footer_impressum;
   font-size: 0.8rem;
   text-decoration: underline;
-  color: whitesmoke;
 }
 
 #footer_datenschutz {
   grid-area: footer_datenschutz;
   font-size: 0.8rem;
   text-decoration: underline;
-  color: whitesmoke;
 }
 
 /* ========== Media Querys =============== */
@@ -684,7 +673,7 @@ footer {
   /* === NAV-LOGO === */
 
   .nav-mobile-logo {
-    width: 10%;
+    width: 15vw;
     height: auto;
   }
 
@@ -702,12 +691,6 @@ footer {
     font-size: 10rem;
   }
 
-  #topper_description_h3 {
-    padding-top: 10%;
-    padding-bottom: 30vh;
-    font-size: 4rem;
-  }
-
   #topper_name_h2 {
     font-size: 6rem;
   }
@@ -719,7 +702,7 @@ footer {
   }
 
   .topper_name h3 {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 
   .topper_address {
@@ -781,11 +764,11 @@ footer {
   }
 
   .overlay-haus h3 {
-    font-size: 2.1rem;
+    font-size: 3rem;
   }
 
   .overlay-haus h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   /* === FOOTER === */

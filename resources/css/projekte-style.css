@@ -7,97 +7,158 @@
 
 
 /* -------------- PROJEKTE ---------------- */
+.projekt-container {
+  padding: 2rem 0;
+}
 
+.projekt-container h2{
+  text-align: center;
+  padding: 2rem 0;
+}
 
-.projekte {
-  margin-top: 5rem;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  grid-template-areas: ". . . . . . . . . ."; */
+#EFH, #GW, #OEF{
+  background: #3b4147;
+  color: whitesmoke;
+}
+
+#MFH, #SAN {
+  color: #3b4147;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #3b4147;
+  border-radius: 100%;
+}
+
+#MFH .carousel-indicators li, #SAN .carousel-indicators li{
+  background-color: #3b4147;
+}
+
+#MFH .carousel-indicators .active, #SAN .carousel-indicators .active {
+  background-color: whitesmoke;
+}
+
+#MFH .carousel-control-next, #MFH .carousel-control-prev, #SAN .carousel-control-next, #SAN .carousel-control-prev {
+  color: #3b4147;
 }
 
 .projekt-box {
-  height: 40vh;
-  width: 80%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: auto;
-  margin-bottom: 5rem;
-  /* border: 0.3rem solid #3b4147eb; */
-  -webkit-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
-  -moz-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
-  box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-  grid-template-areas:  "ph ph ph ph"
-                        "pd1 pd1 . ."
-                        "pd2 pd2 pd2 pd2"
-                        "pd3 pd3 . .";
-  align-items: center;
-  justify-content: center; */
-}
-
-/* .projekt-heading {
-  grid-area: ph;
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #3b4146;
-  background-color: rgba(219, 213, 216, 0.56);
-}
-
-.projekt-description1 {
-  grid-area: pd1;
-}
-
-.projekt-description2 {
-  grid-area: pd2;
-  color: #f1f1f1;
-}
-
-.projekt-description3 {
-  grid-area: pd3;
-}
-
-.projekt-text {
-  background-color: rgba(219, 213, 216, 0.56);
-  height: 80%;
-  width: 80%;
-} */
+    height: 40vh;
+    width: 80%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-bottom: 5rem;
+    /* border: 0.3rem solid #3b4147eb; */
+    -webkit-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+    box-shadow: 7px 5px 9px 0px rgba(0,0,0,0.55);
+    /* display: flex !important;
+    justify-content: center;
+    align-items: center; */
+  }
 
 .projekt-text {
-  background-color: rgba(123, 134, 112, 1);
-  height: 70%;
+    background-color: rgba(123, 134, 112, 1);
+    height: 70%;
+  }
+
+
+ /* ---- WOHNEN ---- */
+
+/* ---- EINFAMILIENHAUS ---- */
+ #efh1 {
+   background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+ }
+
+ #efh2 {
+   background-image: url("../images/pixasquare-622732-unsplash.jpg");
+ }
+
+ #efh3 {
+   background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+ }
+
+ #efh4 {
+   background-image: url("../images/pixasquare-622732-unsplash.jpg");
+ }
+
+
+ /* ---- MEHRFAMILIENHAUS ---- */
+
+ #mfh1 {
+   background-image: url("https://images.unsplash.com/photo-1451153378752-16ef2b36ad05?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d066245d73e72d59ca174847c8d844e0&auto=format&fit=crop&w=2847&q=80");
+ }
+
+ #mfh2 {
+   background-image: url(".https://images.unsplash.com/photo-1517607112705-487bf6486e7c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=637645c08ea70578b7d68dfaa0f50409&auto=format&fit=crop&w=2652&q=80");
+ }
+
+ #mfh3 {
+   background-image: url("https://images.unsplash.com/photo-1501311409379-25beadb726c9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3a97d9f4600b4b59045e21b83eca8c5&auto=format&fit=crop&w=1650&q=80");
+ }
+
+ #mfh4 {
+   background-image: url("https://images.unsplash.com/photo-1486424792350-18be29dd8bd4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5b543554f02d3a9ad0270fe62ea0f2d5&auto=format&fit=crop&w=1653&q=80");
+ }
+
+
+
+/* --- GEWERBE --- */
+
+#gw1 {
+  background-image: url("https://images.unsplash.com/photo-1508759191076-7d83edf34fb5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c64c81c5deafd7393ddde926517ba238&auto=format&fit=crop&w=2091&q=80");
+}
+
+#gw2 {
+  background-image: url("https://images.unsplash.com/photo-1530758857751-3c6e5147e24d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70b78fd36e67ad51f46f491066a3fa2c&auto=format&fit=crop&w=1000&q=80");
+}
+
+#gw3 {
+  background-image: url("https://images.unsplash.com/photo-1455472467710-3b204ed59394?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6750da6c358b00bd8b70f00946ecb13&auto=format&fit=crop&w=1650&q=80");
+}
+
+#gw4 {
+  background-image: url("https://images.unsplash.com/photo-1471974620639-76a238d1027b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca66a1997006531b64cc1f263997d9b1&auto=format&fit=crop&w=668&q=80");
 }
 
 
-#projekt1 {
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+/* --- SANIERUNGEN --- */
+
+#san1 {
+  background-image: url("https://images.unsplash.com/photo-1508759191076-7d83edf34fb5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c64c81c5deafd7393ddde926517ba238&auto=format&fit=crop&w=2091&q=80");
 }
 
-#projekt2 {
-  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+#san2 {
+  background-image: url("https://images.unsplash.com/photo-1530758857751-3c6e5147e24d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70b78fd36e67ad51f46f491066a3fa2c&auto=format&fit=crop&w=1000&q=80");
 }
 
-#projekt3 {
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+#san3 {
+  background-image: url("https://images.unsplash.com/photo-1455472467710-3b204ed59394?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6750da6c358b00bd8b70f00946ecb13&auto=format&fit=crop&w=1650&q=80");
 }
 
-#projekt4 {
-  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+#san4 {
+  background-image: url("https://images.unsplash.com/photo-1471974620639-76a238d1027b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca66a1997006531b64cc1f263997d9b1&auto=format&fit=crop&w=668&q=80");
 }
 
-#projekt5 {
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+
+/* --- OEFFENTLICH ---  */
+
+#oef1 {
+  background-image: url("https://images.unsplash.com/photo-1508759191076-7d83edf34fb5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c64c81c5deafd7393ddde926517ba238&auto=format&fit=crop&w=2091&q=80");
 }
 
-#projekt6 {
-  background-image: url("../images/pixasquare-622732-unsplash.jpg");
+#oef2 {
+  background-image: url("https://images.unsplash.com/photo-1530758857751-3c6e5147e24d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70b78fd36e67ad51f46f491066a3fa2c&auto=format&fit=crop&w=1000&q=80");
 }
 
-#projekt7 {
-  background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+#oef3 {
+  background-image: url("https://images.unsplash.com/photo-1455472467710-3b204ed59394?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6750da6c358b00bd8b70f00946ecb13&auto=format&fit=crop&w=1650&q=80");
+}
+
+#oef4 {
+  background-image: url("https://images.unsplash.com/photo-1471974620639-76a238d1027b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca66a1997006531b64cc1f263997d9b1&auto=format&fit=crop&w=668&q=80");
 }

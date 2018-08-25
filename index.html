@@ -12,17 +12,17 @@
     <!-- ======== CSS ========== -->
     <link rel="stylesheet" href="resources/css/reset.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> <!-- AOS Scroll Animation CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,900" rel="stylesheet"> <!-- Roboto Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet"> <!-- Montserrat  Font -->
-    <link href="https://fonts.googleapis.com/css?family=Archivo:400,500,600,700" rel="stylesheet"> <!-- Archivo Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,900" rel="stylesheet"> <!-- Poppims Font -->
+    <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet"> <!-- GRUPPO FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet"> <!-- ARCHITECTS DAUGHTER FONTS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- fontawesome - Icons -->
     <link rel="stylesheet" href="resources/css/style.css">
 
     <!-- ========== PLUGINS / SCRIPT ============= -->
     <link href="resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon"> <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="80x80" href="resources/images/favicon.ico" type="image/x-icon"> <!-- Favicon for Apple -->
-    <script src="resources/js/jquery-3.3.1.min.js"></script> <!-- jQuery Plugin -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <!-- jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> <!-- Bootstrap JS -->
     <script src="resources/js/jquery.scrollify.js"></script> <!-- Scrollify for Scroll-motion -->
   </head>
   <body>
@@ -39,7 +39,7 @@
           </div> -->
         </div>
 
-        <div class="nav-mobile-content">
+        <!-- <div class="nav-mobile-content">
           <a href="#">Startseite</a>
           <a href="#">Leistungen</a>
           <a href="projekte/projekte.html">Projekte</a>
@@ -47,7 +47,7 @@
           <a href="#">Kontakt</a>
           <a href="#">Impressum</a>
           <a href="#">Datenschutz</a>
-        </div>
+        </div> -->
       </div>
 
       <div class="nav-desktop">
@@ -72,7 +72,6 @@
         <!-- ======================= TOPPER FIRST SECTION ================= -->
 
         <div id="topper-first-index" class="topper-first section">
-          <h3 id="topper_description_h3">Architekt | Bauplanung | Bauleitung</h3>
           <h1 class="topper_h1">Architektur</h1>
           <h1 class="topper_h1">AЯTelier</h1>
         </div>
@@ -103,16 +102,48 @@
         </div>
       </div>
 
-      <!-- ==================== WAS ICH FÜR SIE TUN KANN ===================== -->
+      <!-- ============= PROJEKTE ================ -->
+
+      <div id="block2">
+        <h2>Projekte</h2>
+        <div class="grid-container-block2">
+          <div id="haus1" class="block2-box">
+            <div id="haus1-overlay"class="overlay-haus">
+              <h3>Wohnen</h3>
+              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
+            </div>
+         </div>
+          <div id="haus2" class="block2-box">
+            <div id="haus2-overlay" class="overlay-haus">
+              <h3>Gewerbe</h3>
+              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
+            </div>
+          </div>
+          <div id="haus3" class="block2-box">
+            <div id="haus3-overlay" class="overlay-haus">
+              <h3>Sanieren</h3>
+              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
+            </div>
+          </div>
+          <div id="haus4" class="block2-box">
+            <div id="haus4-overlay" class="overlay-haus">
+              <h3>Öffentlich</h3>
+              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== LEISTUNGEN ===================== -->
 
       <div id="block1" class="section">
-        <h2>Gemeinsam zu Ihrem Traum</h2>
+        <h2>Leistungen</h2>
 
-        <!-- GRUNDLAGENERMITTLUNG -->
+        <!-- ENTWURFSPLANUNG -->
 
         <div id="box1" class="box-frame">
           <div id="box1-1" class="text-box-right text-box text-align">
-              <h3 class="box-heading">GRUNDLAGEN<wbr>ERMITTLUNG</h3>
+              <h3 class="box-heading">ENTWURFS<wbr>PLANUNG</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -121,11 +152,11 @@
           </div>
         </div>
 
-        <!-- ENTWURFSPLANUNG -->
+        <!-- AUSFÜHRUNGSPLANUNG -->
 
         <div id="box2" class="box-frame">
           <div id="box2-1" class="text-box-left text-box text-align">
-            <h3 class="box-heading">ENTWURFS<wbr>PLANUNG</h3>
+            <h3 class="box-heading">AUSFÜHRUNGS<wbr>PLANUNG</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -134,11 +165,11 @@
           </div>
         </div>
 
-        <!-- GEHNEMIGUNGSPLANUNG -->
+        <!-- BAUUMSETZUNG -->
 
         <div id="box3" class="box-frame">
           <div id="box3-1" class="text-box-right text-box text-align">
-            <h3 class="box-heading">GEHNEMIGUNGS<wbr>PLANUNG</h3>
+            <h3 class="box-heading">BAU<wbr>UMSETZUNG</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -147,11 +178,11 @@
           </div>
         </div>
 
-        <!-- AUSFÜHRUNGSPLANUNG -->
+        <!-- MATERIALIEN -->
 
         <div id="box4" class="box-frame">
           <div id="box4-1" class="text-box-left text-box text-align">
-            <h3 class="box-heading">AUSFÜHRUNGS<wbr>PLANUNG</h3>
+            <h3 class="box-heading">MATERIALIEN</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -160,11 +191,11 @@
           </div>
         </div>
 
-        <!-- VORBEREITUNG VERGABE -->
+        <!-- WOHNGESUNDHEIT -->
 
         <div id="box5" class="box-frame">
           <div id="box5-1" class="text-box-right text-box text-align">
-            <h3 class="box-heading">VORBEREITUNG <wbr>VERGABE</h3>
+            <h3 class="box-heading">WOHN<wbr>GESUNDHEIT</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -173,11 +204,11 @@
           </div>
         </div>
 
-           <!-- MITWIRKUNG VERGABE -->
+           <!-- ENERGIE -->
 
         <div id="box6" class="box-frame">
           <div id="box6-1" class="text-box-left text-box text-align">
-            <h3 class="box-heading">MITWIRUKUNG <wbr> VERGABE</h3>
+            <h3 class="box-heading">ENERGIE</h3>
               <h5 class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 </h5>
@@ -185,8 +216,8 @@
           <div id="box6-2" class="img-box-right img-box">
           </div>
         </div>
+<!--
 
-          <!-- OBJEKTÜBERWACHUNG -->
 
         <div id="box7" class="box-frame">
           <div id="box7-1" class="text-box-right text-box text-align">
@@ -199,7 +230,7 @@
           </div>
         </div>
 
-          <!-- OBJEKTBETREUUNG -->
+
 
         <div id="box8" class="box-frame">
           <div id="box8-1" class="text-box-left text-box text-align">
@@ -210,39 +241,7 @@
           </div>
           <div id="box8-2" class="img-box-right img-box">
           </div>
-        </div>
-      </div>
-
-      <!-- ============= PROJEKTE ================ -->
-
-      <div id="block2">
-        <h2>Projekte</h2>
-        <div class="grid-container-block2">
-          <div id="haus1" class="block2-box">
-            <div id="haus1-overlay"class="overlay-haus">
-              <h3>Einfamilien<wbr>haus</h3>
-              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-            </div>
-         </div>
-          <div id="haus2" class="block2-box">
-            <div id="haus2-overlay" class="overlay-haus">
-              <h3>Mehrfamilien<wbr>haus</h3>
-              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-            </div>
-          </div>
-          <div id="haus3" class="block2-box">
-            <div id="haus3-overlay" class="overlay-haus">
-              <h3>Kernsaniertes <wbr>Bauernhaus</h3>
-              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-            </div>
-          </div>
-          <div id="haus4" class="block2-box">
-            <div id="haus4-overlay" class="overlay-haus">
-              <h3>Individueller <wbr>Neubau</h3>
-              <h4>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h4>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
 
     </main>
