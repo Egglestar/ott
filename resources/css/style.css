@@ -3,7 +3,6 @@
 html {
   font-size: 62.5%;
   width: 100%;
-  font-family: 'Gruppo', cursive;
   color: #41474d;
 }
 
@@ -12,6 +11,7 @@ body {
   width: 100%;
   margin: auto;
   background-color: #c5c5ce36;
+  font-family: 'Gruppo', cursive !important;
 }
 
 h1 {
