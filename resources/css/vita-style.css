@@ -2,51 +2,36 @@
 
 /* === TOPPER IMAGE === */
 
-/* #topper-first-vita {
+#topper-first-vita {
   background-image: url("../images/maria-fernanda-gonzalez-569256-unsplash.jpg");
-} */
-
-
-
-/* === VITA CONTAINER === */
-
-.vita {
-  background-color: rgb(23, 23, 23);
-  min-height: 100vh;
-  padding-top: 10rem;
 }
 
-.header-vita {
-  color: white;
-  text-align: center;
-  padding-bottom: 3rem;
-  grid-area: header-vita;
-}
-
-
-/* === VITA IMAGE === */
 
 .vita-img {
-  height: 30vh;
-  width: 100%;
+  display: none;
   background-image: url("../images/maria-fernanda-gonzalez-569256-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+/* === VITA HEADER === */
+
+#header-vita {
+  display: none;
+  text-align: center;
   padding-bottom: 3rem;
-  grid-area: vita-img;
 }
 
 /* === VITA TEXT === */
 
-.vita-text {
-  color: white;
+.vita {
+  background: #3b4147;
+  color: whitesmoke;
   text-align: justify;
   padding: 2rem 3rem;
-  grid-area: vita-text;
 }
 
-.vita-text p {
+.vita-text p, .vita-text ul {
   font-size: 2rem;
   line-height: 1.3;
 }
@@ -54,28 +39,35 @@
 
 /* ============ DESKTOP VERSION ============== */
 
-
 @media (min-width: 760px) {
 
-  .header-vita h2{
-    font-size: 5rem;
+  main {
+    padding-top: 10vh;
   }
 
-  .container-vita {
-    height: 80vh;
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas:
-                          "vita-text vita-text vita-text vita-text vita-img vita-img vita-img vita-img";
+  .vita {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
   }
 
-  .vita-img {
-    height: 100%;
-    width: auto;
+  .topper {
+    display: none;
   }
 
   .vita-text {
-    display: flex;
-    align-items: center;
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .vita-img {
+    display: block;
+    width: 50%;
+  }
+
+  #header-vita {
+    display: block;
+    font-size: 5rem;
   }
