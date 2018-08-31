@@ -250,10 +250,7 @@
     <footer>
       <h3 id="footer_header">Arichitektur Artelier</h3>
       <h3 id="footer_name">Daniel Ott</h3>
-      <a id="footer_address" href="#"><div style="text-align: center">
-        <h3>Brühlstraße 3</h3>
-        <h3>72149 Neustetten</h3>
-      </div></a>
+      <a id="footer_address" href="#">Brühlstraße 3,<wbr> 72149 Neustetten</a>
       <a id="footer_handy" href="tel:+491621837200">+49 162 / 183 7200</a>
       <a id="footer_mail" href="mailto:daniel_ott@architekturartelier.de">daniel_ott@architekturartelier.de</a>
       <a id="footer_impressum" href="#">Impressum</a>
@@ -311,7 +308,7 @@
 
     </script> -->
 
-    <!-- === PROJEKTE FADE IN TEXT ON HOVER === -->
+    <!-- === PROJEKTE FADE IN TEXT ON HOVER & REDIRECT TO LINK=== -->
     <script>
 
     // Projekt-Haus1 fade in
@@ -321,12 +318,22 @@
         $("#haus1-overlay").removeClass("appear");
       });
 
+    // Projekt-Haus1 link to Projekt-site
+      $("#haus1").click(function() {
+        window.location.href='projekte.html#EFH';
+      });
+
       // Projekt-Haus2 fade in
       $("#haus2").hover(function(){
         $("#haus2-overlay").addClass("appear");
       }, function() {
         $("#haus2-overlay").removeClass("appear");
       });
+
+      // Projekt-Haus link to Projekt-site
+        $("#haus2").click(function() {
+          window.location.href='projekte.html#GW';
+        });
 
       // Projekt-Haus3 fade in
       $("#haus3").hover(function(){
@@ -335,6 +342,11 @@
         $("#haus3-overlay").removeClass("appear");
       });
 
+      // Projekt-Haus3 link to Projekt-site
+        $("#haus3").click(function() {
+          window.location.href='projekte.html#SAN';
+        });
+
       // Projekt-Haus4 fade in
       $("#haus4").hover(function(){
         $("#haus4-overlay").addClass("appear");
@@ -342,9 +354,54 @@
         $("#haus4-overlay").removeClass("appear");
       });
 
+      // Projekt-Haus4 link to Projekt-site
+        $("#haus4").click(function() {
+          window.location.href='projekte.html#OEF';
+        });
+
     </script>
 
 
+    <!-- === REDIRECT LEISTUNGEN === -->
+    <script>
+
+      //ENTWURFSPLANUNG
+
+      $("#box1-1").click(function() {
+        window.location.href="entwurfsplanung.html";
+      });
+
+      //AUSFÜHRUNGSPLANUNG
+
+      $("#box2-1").click(function() {
+        window.location.href="ausfuerhrungsplanung.html";
+      });
+
+      //BAUUMSETZUNG
+
+      $("#box3-1").click(function() {
+        window.location.href="bauumsetzung.html";
+      });
+
+      //MATERIALIEN
+
+      $("#box4-1").click(function() {
+        window.location.href="materialien.html";
+      });
+
+      //WOHNGESUNDHEIT
+
+      $("#box5-1").click(function() {
+        window.location.href="wohngesundheit.html";
+      });
+
+      //ENERGIE
+
+      $("#box6-1").click(function() {
+        window.location.href="energie.html";
+      });
+
+    </script>
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> <!-- AOS Scroll Animation JS -->
     <!-- <script type="text/javascript">
