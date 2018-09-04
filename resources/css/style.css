@@ -43,10 +43,15 @@ p {
 }
 
 a {
-  color: black;
+  color: #3b4147;
   text-decoration: none;
   font-size: 1rem;
 }
+
+/* a:hover {
+  color: #252a2e;
+  text-decoration: none;
+} */
 
 i {
   font-size: 3rem;
@@ -357,6 +362,7 @@ box-shadow:         1px 2px 5px 0px #3b4147,
 #haus1 {
 grid-area: haus1;
 background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+cursor: pointer;
 }
 
 .overlay-haus {
@@ -394,6 +400,7 @@ opacity: 1;
 #haus2 {
 grid-area: haus2;
 background-image: url("../images/pixasquare-622732-unsplash.jpg");
+cursor: pointer;
 }
 
 /* === Haus3 === */
@@ -401,6 +408,7 @@ background-image: url("../images/pixasquare-622732-unsplash.jpg");
 #haus3 {
 grid-area: haus3;
 background-image: url("../images/scott-webb-167099-unsplash.jpg");
+cursor: pointer;
 }
 
 /* === Haus4 === */
@@ -408,6 +416,7 @@ background-image: url("../images/scott-webb-167099-unsplash.jpg");
 #haus4 {
 grid-area: haus4;
 background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
+cursor: pointer;
 }
 
 
@@ -441,6 +450,7 @@ background-image: url("../images/luke-stackpoole-561551-unsplash.jpg");
 
 .text-box {
   position: absolute;
+  cursor: pointer;
   /* -webkit-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   -moz-box-shadow: 10px 10px 22px 0px rgba(59,65,71,1);
   box-shadow: 10px 10px 22px 0px rgba(59,65,71,1); */
@@ -631,10 +641,6 @@ footer {
   padding-bottom: 1.5rem;
 }
 
-#footer_address h3 {
-  font-size: 1rem;
-}
-
 #footer_handy {
   grid-area: footer_handy;
   font-size: 1rem;
@@ -777,7 +783,7 @@ footer {
     font-size: 3rem;
   }
 
-  #footer_address h3, #footer_handy, #footer_mail {
+  #footer_address, #footer_handy, #footer_mail {
     font-size: 2rem;
   }
 
