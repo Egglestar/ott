@@ -140,6 +140,8 @@
 
 /* +++ EFH4 +++ */
 
+
+
 /* -------------- PROJEKTE ---------------- */
 .projekt-container, .materialen-container {
   padding: 2rem 0;
@@ -147,6 +149,7 @@
 
 .projekt-container:nth-child(odd) {
   background: #3b4147;
+  color: whitesmoke;
 }
 
 .projekt-container h2 {
@@ -162,33 +165,39 @@
   text-align: justify;
 }
 
-#EFH, #GW, #OEF, .zusammenfassung{
-  background: #3b4147;
-  color: whitesmoke;
-}
-
-#MFH, #SAN, .objekt-bilder {
-  color: #3b4147;
-}
-
 .carousel-indicators li {
   width: 10px;
   height: 10px;
-  border: 1px solid #3b4147;
   border-radius: 100%;
 }
 
-#MFH .carousel-indicators li, #SAN .carousel-indicators li, .bauplan-bilder .carousel-indicators li{
-  background-color: #3b4147;
+.projekt-container:nth-child(odd) .carousel-indicators li {
+  border: 1px solid whitesmoke;
 }
 
-#MFH .carousel-indicators .active, #SAN .carousel-indicators .active, .bauplan-bilder .carousel-indicators .active {
+.projekt-container:nth-child(even) .carousel-indicators li {
+  border: 1px solid #3b4147;
+}
+
+.projekt-container:nth-child(odd) li {
   background-color: whitesmoke;
 }
 
-#MFH .carousel-control-next, #MFH .carousel-control-prev, #SAN .carousel-control-next, #SAN .carousel-control-prev, .bauplan-bilder .carousel-control-next, .bauplan-bilder .carousel-control-prev {
+.projekt-container:nth-child(odd) .carousel-indicators .active {
+  background: #3b4147;
+}
+
+.projekt-container:nth-child(even) .carousel-indicators .active {
+  background: #3b4147;
+}
+
+.projekt-container:nth-child(even) .carousel-control-next, .projekt-container:nth-child(even) .carousel-control-prev {
   color: #3b4147;
 }
+
+/* #MFH .carousel-control-next, #MFH .carousel-control-prev, #SAN .carousel-control-next, #SAN .carousel-control-prev, .bauplan-bilder .carousel-control-next, .bauplan-bilder .carousel-control-prev {
+  color: #3b4147;
+} */
 
 .projekt-box {
     height: 40vh;
@@ -217,7 +226,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .materialien-img {
