@@ -132,6 +132,24 @@
 /* +++ EFH1 +++ */
 
 
+    /* ** Bauplan ** */
+
+    #efh1-2-1 {
+      background-image: url("https://www.tektorum.de/attachments/bauherren-auftraggeber/1981d1414525420-bauplan-eg.jpg");
+    }
+
+    #efh1-2-2 {
+      background-image: url("http://schwedenhaus.homepage.t-online.de/bauplaene/schwedenhaus-magnus-grundrisse-h.png");
+    }
+
+    #efh1-2-3 {
+      background-image: url("http://phgraphics.net/wp-content/uploads/2018/06/bauplan-download-boot-avec-sandkasten-schiff-bauanleitung-et-banda-plan-42-sandkasten-schiff-bauanleitung-sur-la-cat-gorie-interior-design-und-decor.jpg");
+    }
+
+    #efh1-2-4 {
+      background-image: url("https://verlagshaus24.de/media/image/thumbnail/9-13589_720x600.jpg");
+    }
+
 /* +++ EFH2 +++ */
 
 
@@ -163,6 +181,8 @@
 
 .projekt-container p {
   text-align: justify;
+  font-size: 2rem;
+  padding: 0 3rem;
 }
 
 .carousel-indicators li {
@@ -195,10 +215,6 @@
   color: #3b4147;
 }
 
-/* #MFH .carousel-control-next, #MFH .carousel-control-prev, #SAN .carousel-control-next, #SAN .carousel-control-prev, .bauplan-bilder .carousel-control-next, .bauplan-bilder .carousel-control-prev {
-  color: #3b4147;
-} */
-
 .projekt-box {
     height: 40vh;
     width: 80%;
@@ -216,10 +232,18 @@
     align-items: center; */
   }
 
-.projekt-text {
+  .carousel-caption {
+      position: relative;
+      left: auto;
+      right: auto;
+      padding: 0 0 1.5rem 0;
+  }
+
+/* .projekt-text {
     background-color: rgba(123, 134, 112, 1);
     height: 70%;
-  }
+    color: red;
+  } */
 
 .materialien {
   display: flex;
