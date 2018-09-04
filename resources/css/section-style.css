@@ -1,0 +1,112 @@
+ /* =================== STYLESHEET SECTION =================== */
+
+/* === IMAGE === */
+
+/* +++ VITA ++++ */
+
+#topper-first-vita, #vita-img {
+  background-image: url("../images/maria-fernanda-gonzalez-569256-unsplash.jpg");
+}
+
+/* +++ ENTWURFSPLANUNG +++ */
+
+#topper-first-entwurfsplanung, #entwurfsplanung-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_grundlagenermittlung.jpg");
+}
+
+/* +++ AUSFÜHRUNGSPALNUNG +++ */
+
+#topper-first-ausfuerhungsplanung, #ausfuehrungsplanung-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vorplanung.jpg");
+}
+
+/* +++ BAUUMSETZUNG +++ */
+
+#topper-first-bauumsetzung, #bauumsetzung-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_genehmigungsplanung.jpg");
+}
+
+/* +++ MATERIALIEN +++ */
+
+#topper-first-materialien, #materialien-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_ausfuehrungsplanung.jpg");
+}
+
+/* +++ WOHNGESUNDHEIT +++ */
+
+#topper-first-wohngesundheit, #wohngesundheit-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabevorbereitung.jpg");
+}
+
+/* +++ ENERGIE +++ */
+
+#topper-first-energie, #energie-img {
+  background-image: url("http://www.ib-teichmann.de/fileadmin/user_upload/content/ct_lg_vergabemitwirkung.jpg");
+}
+
+
+/* === LAYOUT === */
+
+.section-img {
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* === HEADER === */
+
+.section-header {
+  display: none;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+/* === VITA TEXT === */
+
+.section {
+  background: #3b4147;
+  color: whitesmoke;
+  text-align: justify;
+  padding: 2rem 3rem;
+}
+
+.section-text p, .section-text ul {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+
+/* ============ DESKTOP VERSION ============== */
+
+@media (min-width: 760px) {
+
+  main {
+    padding-top: 10vh;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .topper {
+    display: none;
+  }
+
+  .section-text {
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .section-img {
+    display: block;
+    width: 50%;
+  }
+
+  .section-header {
+    display: block;
+    font-size: 5rem;
+  }
