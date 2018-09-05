@@ -241,11 +241,9 @@
       padding: 0 0 1.5rem 0;
   }
 
-/* .projekt-text {
-    background-color: rgba(123, 134, 112, 1);
-    height: 70%;
-    color: red;
-  } */
+#carouselEFH .carousel-item, #carouselMFH .carousel-item, #carouselGW .carousel-item, #carouselSAN .carousel-item, #carouselOEF .carousel-item {
+  cursor: pointer;
+}
 
 .materialien {
   display: flex;
