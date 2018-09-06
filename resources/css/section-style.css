@@ -113,6 +113,10 @@
     display: none;
   }
 
+  .topper-impressum {
+    display: flex;
+  }
+
   .section-text {
     width: 50%;
     padding: 2rem;
