@@ -80,6 +80,19 @@
 }
 
 
+/* === IMPRESSUM === */
+
+.impressum {
+  padding: 2rem;
+  background: #3b4147;
+  color: whitesmoke;
+}
+
+.impressum p {
+  font-size: 2rem;
+  text-align: justify;
+}
+
 /* ============ DESKTOP VERSION ============== */
 
 @media (min-width: 760px) {
