@@ -93,6 +93,12 @@
   text-align: justify;
 }
 
+.impressum a {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
 /* ============ DESKTOP VERSION ============== */
 
 @media (min-width: 760px) {
