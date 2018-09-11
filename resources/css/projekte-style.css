@@ -4,10 +4,101 @@
 
 /* ------------ TOPPER --------------- */
 
-#topper-first-projekte {
+/* +++++++++ TOPPER EINZELPROJEKTE EINFAMILEINHAUS ++++++++++ */
+
+#topper-first-efh1 {
   background-image: url("../images/scott-webb-167099-unsplash.jpg");
 }
 
+#topper-first-efh2 {
+  background-image: url();
+}
+
+#topper-first-efh3 {
+  background-image: url();
+}
+
+#topper-first-efh4 {
+  background-image: url();
+}
+
+
+/* +++++++++ TOPPER EINZELPROJEKTE MEHRFAMILENHAUS ++++++++++ */
+
+
+#topper-first-mfh1 {
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+#topper-first-mfh2 {
+  background-image: url();
+}
+
+#topper-first-mfh3 {
+  background-image: url();
+}
+
+#topper-first-mfh4 {
+  background-image: url();
+}
+
+
+/* +++++++++ TOPPER EINZELPROJEKTE GEWERBE ++++++++++ */
+
+
+#topper-first-gw1 {
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+#topper-first-gw2 {
+  background-image: url();
+}
+
+#topper-first-gw3 {
+  background-image: url();
+}
+
+#topper-first-gw4 {
+  background-image: url();
+}
+
+/* +++++++++ TOPPER EINZELPROJEKTE SANIERUNGEN ++++++++++ */
+
+
+#topper-first-san1 {
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+#topper-first-san2 {
+  background-image: url();
+}
+
+#topper-first-san3 {
+  background-image: url();
+}
+
+#topper-first-san4 {
+  background-image: url();
+}
+
+/* +++++++++ TOPPER EINZELPROJEKTE ÖFFENTLICHE ++++++++++ */
+
+
+#topper-first-oef1 {
+  background-image: url("../images/scott-webb-167099-unsplash.jpg");
+}
+
+#topper-first-oef2 {
+  background-image: url();
+}
+
+#topper-first-oef3 {
+  background-image: url();
+}
+
+#topper-first-oef4 {
+  background-image: url();
+}
 
 /* +++ PROJEKTE HAUPTSEITE +++ */
 /* ---- WOHNEN ---- */
