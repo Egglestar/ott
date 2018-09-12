@@ -321,6 +321,28 @@
     });
 </script>
 
+
+<!-- +++ Swipe funktion auf das carousel +++ -->
+
+<script type="text/javascript" src="resources/js/jquery.touchSwipe.min.js"></script>
+
+<script>
+function addSwipeTo(selector){
+            $(selector).swipe("destroy");
+            $(selector).swipe( {
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    if(direction=='left'){
+                        $(this).carousel('next');
+                    }else if(direction=='right'){
+                        $(this).carousel('prev');
+                    }
+                }
+            });
+}
+addSwipeTo(".carousel");
+
+</script>
+
 <!-- <script>
 // nav scroll function to hide nav when scrolling down
 
