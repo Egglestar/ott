@@ -48,10 +48,10 @@ a {
   font-size: 1rem;
 }
 
-/* a:hover {
-  color: #252a2e;
-  text-decoration: none;
-} */
+a:hover {
+    color: #3b4147;
+    text-decoration: underline;
+}
 
 i {
   font-size: 3rem;
